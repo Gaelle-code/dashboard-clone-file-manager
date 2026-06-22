@@ -25,7 +25,7 @@ function App() {
               element={
                 <PlaceholderPage
                   title="Videos"
-                  description="The reference shell reserves this route for the file manager video folder."
+                  description="This page isn't done yet — the video folder layout was out of scope for this sprint."
                 />
               }
             />
@@ -34,7 +34,7 @@ function App() {
               element={
                 <PlaceholderPage
                   title="Documents"
-                  description="This screen keeps the same dashboard shell while the document folder stays out of scope."
+                  description="The documents view wasn't required for this assignment. The route is set up and the sidebar link works."
                 />
               }
             />
@@ -43,7 +43,7 @@ function App() {
               element={
                 <PlaceholderPage
                   title="All Files"
-                  description="A future folder aggregate view can sit here without changing the surrounding layout."
+                  description="This would show all files across every folder combined. Not built yet."
                 />
               }
             />
@@ -52,7 +52,7 @@ function App() {
               element={
                 <PlaceholderPage
                   title="Trash"
-                  description="The assignment marks delete and restore flows as out of scope for this pass."
+                  description="Deleted files would show up here with a restore option. The assignment said to leave delete and restore for later."
                 />
               }
             />

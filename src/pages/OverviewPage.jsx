@@ -9,11 +9,10 @@ export function OverviewPage() {
   return (
     <section className="overview-panel">
       <div className="overview-copy">
-        <span className="image-pill">Assignment status</span>
+        <span className="image-pill">File Manager</span>
         <h3>Welcome back, Gaelle</h3>
         <p>
-          Here is a summary of your file manager activity. Your image folder is active and all files
-          are read-only this session.
+          Here is a quick overview of your image folder. Click Images in the sidebar to browse and preview your files.
         </p>
       </div>
 
@@ -30,26 +29,26 @@ export function OverviewPage() {
         </div>
         <div className="metric-card">
           <FiGrid />
-          <span>Gallery state</span>
-          <strong>Derived from one source</strong>
+          <span>Total files</span>
+          <strong>{images.length}</strong>
         </div>
       </div>
 
       <div className="placeholder-grid">
         <div className="metric-card">
           <FiShield />
-          <span>Scope check</span>
-          <strong>Read only</strong>
+          <span>Folder</span>
+          <strong>Images</strong>
         </div>
         <div className="metric-card">
           <FiImage />
-          <span>Preview mode</span>
-          <strong>Lightbox only</strong>
+          <span>Status</span>
+          <strong>Read only</strong>
         </div>
         <div className="metric-card">
           <FiClock />
-          <span>Recent view</span>
-          <strong>Sorted by last opened</strong>
+          <span>Last opened</span>
+          <strong>{recentImage ? formatRelativeTime(recentImage.lastOpenedAt) : 'No data'}</strong>
         </div>
       </div>
     </section>
