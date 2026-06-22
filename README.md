@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Gaelle UI Image Folder Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a student-style frontend implementation of the **Dashboard Clone: File Manager Image Gallery Module** assignment.
 
-## Available Scripts
+## Assignment Understanding
 
-In the project directory, you can run:
+- The reference is the live file manager image folder design from the assignment brief.
+- The work is a **read-only clone** for this sprint.
+- The important parts are the **layout**, **visual system**, **shared state shape**, and **responsive structure**.
+- Create, update, delete, trash, and upload flows are intentionally out of scope for this pass.
 
-### `npm start`
+## What This Scaffold Now Includes
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Routed file-manager shell with sidebar and top navbar.
+- Active sidebar highlighting via React Router.
+- Shared mock image store backed by React state and context.
+- Images page with:
+  - page header
+  - search/filter input
+  - recently viewed row
+  - responsive image grid
+  - read-only preview modal
+- Placeholder routes for Videos, Documents, All Files, and Trash.
+- A dashboard overview route for the File Manager entry point.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Stack
 
-### `npm test`
+- React
+- Vite
+- React Router v6
+- react-icons
+- Plain CSS with CSS custom properties was chosen over Tailwind to allow direct matching of exact hex values from the reference design without configuring a Tailwind theme. The assignment permits this choice.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Known Limitations
 
-### `npm run build`
+- Add Image button is present for visual fidelity only and does not save anything to state.
+- Delete, Edit, and Trash flows are intentionally out of scope for this sprint.
+- Sign Out and Help links are non-functional placeholders.
+- No backend or API - all data is local mock data.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Run Locally
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+npm run dev
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Verify
 
-### `npm run eject`
+```bash
+npm test
+npm run build
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Scope Notes
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- The gallery uses local SVG-backed mock artwork, so it does not depend on external image hosts.
+- Recently Viewed is derived from `lastOpenedAt` in the shared image store.
+- The Add Image button is present for visual fidelity only in this round.
