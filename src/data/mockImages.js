@@ -1,26 +1,3 @@
-function makeImageDataUrl(title, initials, primaryColor, secondaryColor) {
-  const svg = `
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 640">
-      <defs>
-        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stop-color="${primaryColor}" />
-          <stop offset="100%" stop-color="${secondaryColor}" />
-        </linearGradient>
-      </defs>
-      <rect width="900" height="640" fill="url(#bg)" />
-      <circle cx="760" cy="110" r="150" fill="rgba(255,255,255,0.15)" />
-      <circle cx="160" cy="120" r="140" fill="rgba(255,255,255,0.12)" />
-      <path d="M0 470C150 360 250 560 410 445C560 338 675 375 900 260V640H0Z" fill="rgba(255,255,255,0.18)" />
-      <path d="M0 530C180 450 290 560 470 470C620 395 720 420 900 355V640H0Z" fill="rgba(15,23,42,0.12)" />
-      <rect x="64" y="62" width="180" height="54" rx="18" fill="rgba(255,255,255,0.2)" />
-      <text x="92" y="98" fill="white" font-size="26" font-family="Arial, sans-serif" font-weight="700">${initials}</text>
-      <text x="70" y="546" fill="white" font-size="56" font-family="Arial, sans-serif" font-weight="800">${title}</text>
-    </svg>
-  `;
-
-  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
-}
-
 const images = [
   {
     id: 1,
@@ -31,7 +8,7 @@ const images = [
     size: '2.4 MB',
     format: 'PNG',
     description: 'Soft gradients and a layered light trail pulled from the visual language of the clone.',
-    url: makeImageDataUrl('Aurora', 'AT', '#3a57e8', '#7f8cff'),
+    url: '/gallery/aurora.svg',
   },
   {
     id: 2,
@@ -42,7 +19,7 @@ const images = [
     size: '1.9 MB',
     format: 'JPG',
     description: 'Bright accent shapes with a balanced teal and blue dashboard palette.',
-    url: makeImageDataUrl('Signal', 'SH', '#08b1ba', '#175d95'),
+    url: '/gallery/signal.svg',
   },
   {
     id: 3,
@@ -53,7 +30,7 @@ const images = [
     size: '3.1 MB',
     format: 'PNG',
     description: 'A warmer card used to keep the gallery visually varied and readable.',
-    url: makeImageDataUrl('Paper', 'PH', '#f97316', '#f43f5e'),
+    url: '/gallery/paper.svg',
   },
   {
     id: 4,
@@ -64,7 +41,7 @@ const images = [
     size: '2.1 MB',
     format: 'PNG',
     description: 'The title reflects a clean card composition with subtle glass effects.',
-    url: makeImageDataUrl('Glass', 'GN', '#22c55e', '#0ea5e9'),
+    url: '/gallery/glass.svg',
   },
   {
     id: 5,
@@ -75,7 +52,7 @@ const images = [
     size: '4.0 MB',
     format: 'JPG',
     description: 'A darker option to anchor the top row of the recent view scroller.',
-    url: makeImageDataUrl('Summit', 'SF', '#1d4ed8', '#4f46e5'),
+    url: '/gallery/summit.svg',
   },
   {
     id: 6,
@@ -86,7 +63,7 @@ const images = [
     size: '2.8 MB',
     format: 'PNG',
     description: 'Rounded wave forms help the image cards feel like real media tiles.',
-    url: makeImageDataUrl('Orbit', 'OS', '#0ea5e9', '#2563eb'),
+    url: '/gallery/orbit.svg',
   },
   {
     id: 7,
@@ -97,7 +74,7 @@ const images = [
     size: '1.7 MB',
     format: 'JPG',
     description: 'This tile adds a warmer accent so the row does not feel repetitive.',
-    url: makeImageDataUrl('Studio', 'SB', '#ec4899', '#f59e0b'),
+    url: '/gallery/studio.svg',
   },
   {
     id: 8,
@@ -108,7 +85,7 @@ const images = [
     size: '3.5 MB',
     format: 'PNG',
     description: 'A geometric composition that works well in the responsive grid.',
-    url: makeImageDataUrl('Prism', 'PS', '#6366f1', '#06b6d4'),
+    url: '/gallery/prism.svg',
   },
   {
     id: 9,
@@ -119,7 +96,7 @@ const images = [
     size: '2.2 MB',
     format: 'PNG',
     description: 'Muted tones keep the file details readable inside the white cards.',
-    url: makeImageDataUrl('Metro', 'MA', '#475569', '#334155'),
+    url: '/gallery/metro.svg',
   },
   {
     id: 10,
@@ -130,7 +107,7 @@ const images = [
     size: '2.9 MB',
     format: 'JPG',
     description: 'The preview reads like a poster card and gives the modal a strong hero image.',
-    url: makeImageDataUrl('Canvas', 'CL', '#0f766e', '#3b82f6'),
+    url: '/gallery/canvas.svg',
   },
   {
     id: 11,
@@ -141,7 +118,7 @@ const images = [
     size: '4.6 MB',
     format: 'PNG',
     description: 'A cool-toned asset with a subtle spotlight effect in the composition.',
-    url: makeImageDataUrl('North', 'NL', '#0f172a', '#1e40af'),
+    url: '/gallery/north.svg',
   },
   {
     id: 12,
@@ -152,7 +129,7 @@ const images = [
     size: '2.0 MB',
     format: 'PNG',
     description: 'This asset mirrors the calm, card-led rhythm of the reference screen.',
-    url: makeImageDataUrl('Tide', 'TP', '#0284c7', '#14b8a6'),
+    url: '/gallery/tide.svg',
   },
   {
     id: 13,
@@ -163,7 +140,7 @@ const images = [
     size: '1.5 MB',
     format: 'JPG',
     description: 'A lighter card that keeps the gallery from feeling too heavy or dense.',
-    url: makeImageDataUrl('Bloom', 'BP', '#fb7185', '#f97316'),
+    url: '/gallery/bloom.svg',
   },
   {
     id: 14,
@@ -174,7 +151,7 @@ const images = [
     size: '3.9 MB',
     format: 'PNG',
     description: 'Used to round out the all-images grid with a distinct primary shape.',
-    url: makeImageDataUrl('Frame', 'FC', '#4338ca', '#38bdf8'),
+    url: '/gallery/frame.svg',
   },
   {
     id: 15,
@@ -185,7 +162,7 @@ const images = [
     size: '2.6 MB',
     format: 'JPG',
     description: 'A bright ending tile that helps the lightbox feel full and balanced.',
-    url: makeImageDataUrl('Dawn', 'DL', '#f59e0b', '#fb7185'),
+    url: '/gallery/dawn.svg',
   },
   {
     id: 16,
@@ -196,7 +173,7 @@ const images = [
     size: '2.3 MB',
     format: 'PNG',
     description: 'A muted tile that keeps the image index grounded and realistic.',
-    url: makeImageDataUrl('Slate', 'SV', '#1e293b', '#64748b'),
+    url: '/gallery/slate.svg',
   },
 ];
 
