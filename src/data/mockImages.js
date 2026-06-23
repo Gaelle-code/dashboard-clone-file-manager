@@ -8,7 +8,7 @@ const images = [
     size: '2.4 MB',
     format: 'PNG',
     description: 'Soft gradients and a layered light trail pulled from the visual language of the clone.',
-    url: '/gallery/aurora.svg',
+    url: '/gallery/aurora.jpg',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const images = [
     size: '1.9 MB',
     format: 'JPG',
     description: 'Bright accent shapes with a balanced teal and blue dashboard palette.',
-    url: '/gallery/signal.svg',
+    url: '/gallery/signal.jpg',
   },
   {
     id: 3,
@@ -30,7 +30,7 @@ const images = [
     size: '3.1 MB',
     format: 'PNG',
     description: 'A warmer card used to keep the gallery visually varied and readable.',
-    url: '/gallery/paper.svg',
+    url: '/gallery/paper.jpg',
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const images = [
     size: '2.1 MB',
     format: 'PNG',
     description: 'The title reflects a clean card composition with subtle glass effects.',
-    url: '/gallery/glass.svg',
+    url: '/gallery/glass.jpg',
   },
   {
     id: 5,
@@ -52,7 +52,7 @@ const images = [
     size: '4.0 MB',
     format: 'JPG',
     description: 'A darker option to anchor the top row of the recent view scroller.',
-    url: '/gallery/summit.svg',
+    url: '/gallery/summit.jpg',
   },
   {
     id: 6,
@@ -63,7 +63,7 @@ const images = [
     size: '2.8 MB',
     format: 'PNG',
     description: 'Rounded wave forms help the image cards feel like real media tiles.',
-    url: '/gallery/orbit.svg',
+    url: '/gallery/orbit.jpg',
   },
   {
     id: 7,
@@ -74,7 +74,7 @@ const images = [
     size: '1.7 MB',
     format: 'JPG',
     description: 'This tile adds a warmer accent so the row does not feel repetitive.',
-    url: '/gallery/studio.svg',
+    url: '/gallery/studio.jpg',
   },
   {
     id: 8,
@@ -85,7 +85,7 @@ const images = [
     size: '3.5 MB',
     format: 'PNG',
     description: 'A geometric composition that works well in the responsive grid.',
-    url: '/gallery/prism.svg',
+    url: '/gallery/prism.jpg',
   },
   {
     id: 9,
@@ -96,7 +96,7 @@ const images = [
     size: '2.2 MB',
     format: 'PNG',
     description: 'Muted tones keep the file details readable inside the white cards.',
-    url: '/gallery/metro.svg',
+    url: '/gallery/metro.jpg',
   },
   {
     id: 10,
@@ -107,7 +107,7 @@ const images = [
     size: '2.9 MB',
     format: 'JPG',
     description: 'The preview reads like a poster card and gives the modal a strong hero image.',
-    url: '/gallery/canvas.svg',
+    url: '/gallery/canvas.jpg',
   },
   {
     id: 11,
@@ -118,7 +118,7 @@ const images = [
     size: '4.6 MB',
     format: 'PNG',
     description: 'A cool-toned asset with a subtle spotlight effect in the composition.',
-    url: '/gallery/north.svg',
+    url: '/gallery/north.jpg',
   },
   {
     id: 12,
@@ -129,7 +129,7 @@ const images = [
     size: '2.0 MB',
     format: 'PNG',
     description: 'This asset mirrors the calm, card-led rhythm of the reference screen.',
-    url: '/gallery/tide.svg',
+    url: '/gallery/tide.jpg',
   },
   {
     id: 13,
@@ -140,7 +140,7 @@ const images = [
     size: '1.5 MB',
     format: 'JPG',
     description: 'A lighter card that keeps the gallery from feeling too heavy or dense.',
-    url: '/gallery/bloom.svg',
+    url: '/gallery/bloom.jpg',
   },
   {
     id: 14,
@@ -151,7 +151,7 @@ const images = [
     size: '3.9 MB',
     format: 'PNG',
     description: 'Used to round out the all-images grid with a distinct primary shape.',
-    url: '/gallery/frame.svg',
+    url: '/gallery/frame.jpg',
   },
   {
     id: 15,
@@ -162,7 +162,7 @@ const images = [
     size: '2.6 MB',
     format: 'JPG',
     description: 'A bright ending tile that helps the lightbox feel full and balanced.',
-    url: '/gallery/dawn.svg',
+    url: '/gallery/dawn.jpg',
   },
   {
     id: 16,
@@ -173,7 +173,7 @@ const images = [
     size: '2.3 MB',
     format: 'PNG',
     description: 'A muted tile that keeps the image index grounded and realistic.',
-    url: '/gallery/slate.svg',
+    url: '/gallery/slate.jpg',
   },
 ];
 
